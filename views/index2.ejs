@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles/index2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/weatherPageImage.jpg" alt="sunset image" />
+
+      <section class="weather">
+        <div id="temperature">
+          <%= content.temp %> <br />
+          <span> Degrees </span>
+        </div>
+        <div class="weather-grid">
+          <div class="conditions" id="cityName">
+            <div class="condition"><%= city %></div>
+            <div class="name">City</div>
+          </div>
+          <div class="conditions" id="feelsLike">
+            <div class="condition"><%= content.feels_like %></div>
+            <div class="name">Feels Like</div>
+          </div>
+          <div class="conditions" id="humidity">
+            <div class="condition"><%= content.humidity %></div>
+            <div class="name">Humidity</div>
+          </div>
+          <div class="conditions" id="maxTemp">
+            <div class="condition"><%= content.max_temp %></div>
+            <div class="name">Max. Temperature</div>
+          </div>
+          <div class="conditions" id="minTemp">
+            <div class="condition"><%= content.min_temp %></div>
+            <div class="name">Min. Temperature</div>
+          </div>
+          <div class="conditions" id="sunset">
+            <div class="condition"><%= sunset %></div>
+            <div class="name">Sunset</div>
+          </div>
+          <div class="conditions" id="sunrise">
+            <div class="condition"><%= sunrise %></div>
+            <div class="name">Sunrise</div>
+          </div>
+          <div class="conditions" id="windSpeed">
+            <div class="condition"><%= content.wind_speed %></div>
+            <div class="name">Windspeed</div>
+          </div>
+          <div class="conditions" id="windDegrees">
+            <div class="condition"><%= content.wind_degrees %></div>
+            <div class="name">Wind Degree</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
